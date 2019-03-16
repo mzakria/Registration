@@ -1,0 +1,22 @@
+{% extends 'Layouts.html' %}
+
+{% block body %}
+<br /><br />
+<div class='w3-padding w3-border'>
+
+  <div class="w3-row w3-border-bottom w3-text-black">
+     <div class="w3-third w3-container ">
+          <h6>{{ article.title }}</h6>
+     </div>
+     <div class="w3-third w3-container">
+          <h6>{{ article.auther }}</h6>
+     </div>
+     <div class="w3-third w3-container">
+          <h6>{{ article.create_date }}</h6>
+     </div>
+  </div>
+  <br /><br />
+  <div >{{ article.body }}</div>
+  <br /><br />
+</div>
+{% endblock %}

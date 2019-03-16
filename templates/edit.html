@@ -1,0 +1,38 @@
+
+{% extends 'Layouts.html' %}
+{% block body %}
+
+ <script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
+
+  <br /><br />
+  <div  class="w3-container">
+    <div class="w3-container w3-card-4">
+      <header class="w3-container w3-light-grey">
+        <h2>Edit Article</h2>
+      </header>
+      <div class="w3-container">
+          {% from "includes/formHelpers.html" import render_field %}
+          <form method="POST" action="" class="w3-container  w3-padding">
+            <dl >
+              {{render_field(form.title,class='w3-input w3-border  ')}}
+              {{render_field(form.body,class='w3-input w3-border',id="editor")}}
+
+            </dl>
+            <input type='submit' value='submit' class='w3-btn w3-grey '>
+          </form>
+      </div>
+      <br /><br />
+    </div>
+  </div>
+
+<script type="text/javascript">
+  ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .then( editor => {
+                  console.log( editor );
+          } )
+          .catch( error => {
+                  console.error( error );
+          } );
+</script>
+{% endblock %}

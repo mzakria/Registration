@@ -1,0 +1,12 @@
+{% extends 'Layouts.html' %}
+
+{% block body %}
+     <h1>Articles</h1>
+     <ul class='w3-ul'>
+     {% for article in articles%}
+
+          <li class="w3-padding"><a class='w3-btn' href='/article/{{article.id}}' style='width:100%'>{{article.title}}</a></li>
+
+     {% endfor%}
+     </ul>
+{% endblock %}

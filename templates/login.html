@@ -1,0 +1,23 @@
+{% extends 'Layouts.html' %}
+
+{% block body %}
+<br /><br /><br />
+<form action='/login' method='POST' class='w3-padding-16  w3-border'>
+<br /><br />
+    <div class="w3-row-padding ">
+     <div class="w3-third">
+       <label>Username</label>
+       <input class="w3-input w3-border" type="text" name='username' value='{{request.form.username}}' >
+     </div>
+     <div class="w3-third">
+       <label>Password</label>
+       <input class="w3-input w3-border" type="password" name='password' value='{{request.form.password}}'>
+     </div>
+     <div class="w3-third">
+        <br /><input class="w3-input w3-blue-grey w3-hover-light-grey w3-border" type="submit" value='submit'>
+     </div>
+
+    </div>
+    <br /><br />
+</form>
+{% endblock %}

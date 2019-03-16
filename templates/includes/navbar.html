@@ -1,0 +1,13 @@
+<div class="w3-bar w3-blue-grey">
+ <a href="/" class="w3-bar-item w3-button w3-mobile " style="width:14.2%">Home</a>
+ <a href="/about" class="w3-bar-item w3-button w3-mobile" style="width:14.2%">About</a>
+ <a href="/articles" class="w3-bar-item w3-button w3-mobile" style="width:14.2%">article</a>
+
+ {% if session.login %}
+    <a href="/logout" class="w3-bar-item w3-button w3-mobile" style="width:14.2%">Logout</a>
+    <a href="/dashboard" class="w3-bar-item w3-button w3-mobile" style="width:14.2%">dashboard</a>
+{% else %}
+    <a href="/register" class="w3-bar-item w3-button w3-mobile w3-text-white"  style="width:14.2%">register</a>
+    <a href="/login" class="w3-bar-item w3-button w3-mobile w3-text-white"  style="width:14.2%">Login</a>
+{% endif %}
+</div>

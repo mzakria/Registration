@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/css/w3.css') }}">
+</head>
+<body class='w3-white'>
+  <div class="w3-row">
+       <div class="w3-col" style="width:10%"><p></p></div>
+       <div class="w3-col" style="width:80%"><p>
+
+         {% include 'includes/navbar.html' %}
+         {% include 'includes/messegsFlash.html' %}
+         {% block body%} {% endblock %}
+
+       </p></div>
+       <div class="w3-col" style="width:10%"><p></p></div>
+       
+  </div>
+</body>
+</html>
