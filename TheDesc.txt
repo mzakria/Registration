@@ -1,0 +1,18 @@
+1-	Introduce function to Register new Customer.
+2-	Register new Company or manufactory.
+3-	Register new branch on Company or manufactory.
+4-	Inter the Company or manufactory products.
+5-	Inter supervisor of branch.
+6-	Inter new store on branch.
+7-	Inter supervisor of charge.
+8-	Inter new geographic area.
+9-	Inter cites of geographic area. 
+10-	Inter syndical of area.
+
+
+
+
+
+
+
+
